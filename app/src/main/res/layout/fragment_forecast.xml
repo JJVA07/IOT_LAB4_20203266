@@ -2,44 +2,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="16dp"
     android:background="@color/teal_200">
 
-    <!-- Barra de búsqueda -->
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitleForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronósticos del Clima"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="16dp">
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
 
         <EditText
             android:id="@+id/etIdLocation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="idLocation"
-            android:padding="12dp"
-            android:background="@android:drawable/edit_text"
-            android:layout_marginEnd="8dp"/>
+            android:hint="idLocation"/>
 
         <EditText
             android:id="@+id/etDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Días"
-            android:padding="12dp"
-            android:background="@android:drawable/edit_text"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginStart="8dp"
+            android:hint="Días Forecast"/>
 
         <Button
             android:id="@+id/btnBuscarForecast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="Buscar"/>
     </LinearLayout>
 
-    <!-- Lista -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvForecast"
         android:layout_width="match_parent"
