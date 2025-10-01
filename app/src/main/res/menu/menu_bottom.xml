@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/locationFragment"
+        android:title="Locations"
+        android:icon="@android:drawable/ic_menu_mylocation" />
+    <item
+        android:id="@+id/forecastFragment"
+        android:title="Pronóstico"
+        android:icon="@android:drawable/ic_menu_day" />
+    <item
+        android:id="@+id/sportsFragment"
+        android:title="Futuro"
+        android:icon="@android:drawable/ic_menu_agenda" />
+</menu>
